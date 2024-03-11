@@ -9,12 +9,12 @@ Install the package using npm:
 ```bash
 npm install cc-currency-converter
 ```
-#Import
+## Import
 Import the package by using the following block of code
 ```bash
 import { convertCurrency } from "cc-currency-converter";
 ```
-#Ussage
+## Ussage
 ```bash
 convertCurrency("USD", "INR", 4)
   .then((result) => {
@@ -24,14 +24,14 @@ convertCurrency("USD", "INR", 4)
     console.error("Error:", error.message);
   });
 ```
-#API
-convertCurrency(sourceCurrency, targetCurrency, amount)
-Converts the given amount from the source currency to the target currency.
+## API
+convertCurrency(sourceCurrency, targetCurrency, amount)<br>
+Converts the given amount from the source currency to the target currency.<br>
 
-<h6>sourceCurrency:</h6> The currency code of the source currency (e.g., "USD").
-<h6>targetCurrency:</h6> The currency code of the target currency (e.g., "INR").
-<h6>amount:</h6> The amount to convert.
-Returns a Promise that resolves to the converted amount.
+sourceCurrency: The currency code of the source currency (e.g., "USD").<br>
+targetCurrency: The currency code of the target currency (e.g., "INR").<br>
+amount: The amount to convert.<br>
+Returns a Promise that resolves to the converted amount.<br>
 
-#Contributing
+## Contributing
 If you find a bug or have a feature request, please open an issue or submit a pull request. Contributions are welcome!
